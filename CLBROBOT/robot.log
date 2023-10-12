@@ -1,0 +1,208 @@
+Running test 1: LOBOROBOT.py
+Running test 2: 1.passive_buzzer.py
+Running test 3: 2.button.py
+Running test 4: 3.Basic_movement.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 5: 4.infrad_avoid.py
+/usr/bin/python: can't open file '': [Errno 2] No such file or directory
+Running test 6: 5.openCVLineFollowingRobot.py
+Running test 7: 6.speech-conpound.py
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{u'convert_offline': False, u'err_msg': u'16: Open api characters limit reached', u'err_subcode': 16, u'err_detail': u'16: Open api characters limit reached', u'err_no': 502, u'tts_logid': 2149540872L}
+Traceback (most recent call last):
+  File "./6.speech-conpound.py", line 36, in <module>
+    pygame.mixer.music.load('/home/pi/CLBROBOT/makerobo.mp3')
+pygame.error: Couldn't open '/home/pi/CLBROBOT/makerobo.mp3'
+Running test 8: 7.Robot-speech.py
+Running test 9: 8.OpencvBallTracking.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 10: 9.face_recognition.py
+OpenCV Error: Assertion failed (!empty()) in detectMultiScale, file /build/opencv-L65chJ/opencv-3.2.0+dfsg/modules/objdetect/src/cascadedetect.cpp, line 1681
+Traceback (most recent call last):
+  File "./9.face_recognition.py", line 34, in <module>
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+cv2.error: /build/opencv-L65chJ/opencv-3.2.0+dfsg/modules/objdetect/src/cascadedetect.cpp:1681: error: (-215) !empty() in function detectMultiScale
+
+Running test 11: 10.OpencvFaceTracking.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 12: 11.robot_servo_ball.py
+
+(process:2010): Gtk-WARNING **: 15:49:02.603: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:2010): Gtk-WARNING **: 15:49:02.611: cannot open display: 
+Running test 13: 12.robot_servo_face.py
+OpenCV Error: Assertion failed (!empty()) in detectMultiScale, file /build/opencv-L65chJ/opencv-3.2.0+dfsg/modules/objdetect/src/cascadedetect.cpp, line 1681
+Traceback (most recent call last):
+  File "./12.robot_servo_face.py", line 78, in <module>
+    faces=makerobo_face_cascade.detectMultiScale(gray)
+cv2.error: /build/opencv-L65chJ/opencv-3.2.0+dfsg/modules/objdetect/src/cascadedetect.cpp:1681: error: (-215) !empty() in function detectMultiScale
+
+Running test 14: 13.Robot_QR_navigation.py
+Traceback (most recent call last):
+  File "./13.Robot_QR_navigation.py", line 14, in <module>
+    import zbar
+ImportError: No module named zbar
+Running test 15: 14.gesture.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 1: LOBOROBOT.py
+Running test 2: 1.passive_buzzer.py
+Running test 3: 2.button.py
+Running test 4: 3.Basic_movement.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 5: 4.infrad_avoid.py
+/usr/bin/python: can't open file '': [Errno 2] No such file or directory
+Running test 6: 5.openCVLineFollowingRobot.py
+Running test 7: 6.speech-conpound.py
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{u'convert_offline': False, u'err_msg': u'16: Open api characters limit reached', u'err_subcode': 16, u'err_detail': u'16: Open api characters limit reached', u'err_no': 502, u'tts_logid': 3892069306L}
+0.496865034103
+Running test 8: 7.Robot-speech.py
+Running test 9: 8.OpencvBallTracking.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 10: 9.face_recognition.py
+
+(process:2147): Gtk-WARNING **: 15:57:25.710: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(img:2147): Gtk-WARNING **: 15:57:25.713: cannot open display: 
+Running test 11: 10.OpencvFaceTracking.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 12: 11.robot_servo_ball.py
+
+(process:2161): Gtk-WARNING **: 15:57:30.646: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:2161): Gtk-WARNING **: 15:57:30.651: cannot open display: 
+Running test 13: 12.robot_servo_face.py
+
+(process:2171): Gtk-WARNING **: 15:57:36.017: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:2171): Gtk-WARNING **: 15:57:36.025: cannot open display: 
+Running test 14: 13.Robot_QR_navigation.py
+Traceback (most recent call last):
+  File "./13.Robot_QR_navigation.py", line 14, in <module>
+    import zbar
+ImportError: No module named zbar
+Running test 15: 14.gesture.py
+/usr/bin/env: 'python2\r': No such file or directory
+Running test 1: LOBOROBOT.py
+Running test 2: 1.passive_buzzer.py
+Running test 3: 2.button.py
+Running test 4: 3.Basic_movement.py
+Running test 5: 4.infrad_avoid.py
+Running test 6: 5.openCVLineFollowingRobot.py
+Running test 7: 6.speech-conpound.py
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{u'convert_offline': False, u'err_msg': u'16: Open api characters limit reached', u'err_subcode': 16, u'err_detail': u'16: Open api characters limit reached', u'err_no': 502, u'tts_logid': 1103122743}
+0.747099876404
+Running test 8: 7.Robot-speech.py
+Running test 9: 8.OpencvBallTracking.py
+
+(process:1845): Gtk-WARNING **: 20:07:19.866: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(HueComp:1845): Gtk-WARNING **: 20:07:19.903: cannot open display: 
+Running test 10: 9.face_recognition.py
+
+(process:1852): Gtk-WARNING **: 20:07:24.377: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(img:1852): Gtk-WARNING **: 20:07:24.380: cannot open display: 
+Running test 11: 10.OpencvFaceTracking.py
+Running test 12: 11.robot_servo_ball.py
+
+(process:1868): Gtk-WARNING **: 20:07:39.548: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:1868): Gtk-WARNING **: 20:07:39.558: cannot open display: 
+Running test 13: 12.robot_servo_face.py
+
+(process:1878): Gtk-WARNING **: 20:07:44.916: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:1878): Gtk-WARNING **: 20:07:44.921: cannot open display: 
+Running test 14: 13.Robot_QR_navigation.py
+Traceback (most recent call last):
+  File "./13.Robot_QR_navigation.py", line 14, in <module>
+    import zbar
+ImportError: No module named zbar
+Running test 15: 14.gesture.py
+
+(process:1896): Gtk-WARNING **: 20:07:51.894: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(mask:1896): Gtk-WARNING **: 20:07:51.899: cannot open display: 
+Running test 1: LOBOROBOT.py
+Running test 2: 1.passive_buzzer.py
+Running test 3: 2.button.py
+Running test 4: 3.Basic_movement.py
+Running test 5: 4.infrad_avoid.py
+Running test 6: 5.openCVLineFollowingRobot.py
+
+(process:2259): Gtk-WARNING **: 21:18:28.733: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(frame:2259): Gtk-WARNING **: 21:18:28.741: cannot open display: 
+I don't see the line
+Running test 7: 6.speech-conpound.py
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{u'convert_offline': False, u'err_msg': u'16: Open api characters limit reached', u'err_subcode': 16, u'err_detail': u'16: Open api characters limit reached', u'err_no': 502, u'tts_logid': 1640579284}
+2.68296480179
+Running test 8: 7.Robot-speech.py
+Running test 9: 8.OpencvBallTracking.py
+
+(process:2280): Gtk-WARNING **: 21:18:46.628: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(HueComp:2280): Gtk-WARNING **: 21:18:46.633: cannot open display: 
+Running test 10: 9.face_recognition.py
+
+(process:2287): Gtk-WARNING **: 21:18:51.156: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(img:2287): Gtk-WARNING **: 21:18:51.161: cannot open display: 
+Running test 11: 10.OpencvFaceTracking.py
+Running test 12: 11.robot_servo_ball.py
+
+(process:2302): Gtk-WARNING **: 21:19:06.122: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:2302): Gtk-WARNING **: 21:19:06.128: cannot open display: 
+Running test 13: 12.robot_servo_face.py
+
+(process:2313): Gtk-WARNING **: 21:19:11.487: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(MAKEROBO Robot:2313): Gtk-WARNING **: 21:19:11.492: cannot open display: 
+Running test 14: 13.Robot_QR_navigation.py
+Traceback (most recent call last):
+  File "./13.Robot_QR_navigation.py", line 14, in <module>
+    import zbar
+ImportError: No module named zbar
+Running test 15: 14.gesture.py
+
+(process:2332): Gtk-WARNING **: 21:19:18.359: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+
+(mask:2332): Gtk-WARNING **: 21:19:18.365: cannot open display: 

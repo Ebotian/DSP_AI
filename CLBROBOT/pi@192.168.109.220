@@ -1,0 +1,8 @@
+#!/bin/bash
+
+LOG_FILE="log.txt"
+
+for VAR in $(ls *.py|sort -n)
+do
+  timeout 10 ./$VAR 2>&1 | tee -a $LOG_FILE
+done
