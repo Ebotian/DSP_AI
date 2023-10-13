@@ -186,9 +186,19 @@ expect output:robot start singing
 
 ## 4.infrared_avoid.py
 
-## 5.openCVLineFollowingRobot.py
+## 5.openCVLineFollowingRobot.py	
 
 ## 6.speech-compound.py
+
+我是杨威
+
+or the first connect, it will ask you whether connect it or not, just type `yes` and press enter, then it will ask you for the password, the default password is `raspberry`
+
+then you can enter the shell of raspberry pi.
+our pi is brand new, which have nothing installed, so we need to install some packages:
+
+
+
 
 ## 7.Robot-speech.py
 
