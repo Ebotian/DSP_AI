@@ -182,6 +182,7 @@ expect output:robot start singing
 
 ## 2.button.py
 
+
 ## 3.Basic movement.py
 
 ## 4.infrared_avoid.py
@@ -197,6 +198,9 @@ expect output:robot start singing
 ## 9.face_recognition.py
 
 ## 10.OpencvFaceTracking.py
+描述
+这是一个使用OpenCV进行人脸追踪从而控制小车运动的项目，可以实现在摄像头捕获的视频重实时追踪人脸并进行标记。
+
 
 ## 11.robot_servo_ball.py
 
