@@ -12,7 +12,7 @@ To connect to the raspberry pi, i used this command:
 ip a # to find the ip address of the laptop
 ```
 
-example out put:
+expect out put:
 
 ```bash
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -40,7 +40,7 @@ then use this to detect raspberry pi's ip:(notice the first three numbers are th
 sudo nmap -T4 -O 192.168.201.0/24
 ```
 
-example output:
+expect output:
 
 ```bash
 [sudo] password for ebotian:
@@ -178,16 +178,48 @@ then we can run the code now:
 ./1.[tab]
 ```
 
-expect output:robot start singing
+expect output:robot start singing(playing music)
 
 ## 2.button.py
 
+```bash
+./2.[tab]
+```
+
+expect output:when press button, light change its color
 
 ## 3.Basic movement.py
 
+notice if you don't run `dos2unix *.py` before, you will get this error:
+
+```bash
+/usr/bin/env: 'python2\r': No such file or directory
+```
+
+```bash
+./3.[tab]
+```
+
+expect output:robot start moving
+
 ## 4.infrared_avoid.py
 
-## 5.openCVLineFollowingRobot.py	
+notice if you don't run `dos2unix *.py` before, you will get this error:
+
+```bash
+': [Errno 2] No such file or directory
+```
+
+```bash
+./4.[tab]
+```
+
+expect output:
+
+1. robot do nothing until button pressed
+2. robot start moving, when it detect obstacle, it will stop and turn around
+
+## 5.openCVLineFollowingRobot.py
 
 ## 6.speech-compound.py
 
@@ -198,9 +230,6 @@ or the first connect, it will ask you whether connect it or not, just type `yes`
 then you can enter the shell of raspberry pi.
 our pi is brand new, which have nothing installed, so we need to install some packages:
 
-
-
-
 ## 7.Robot-speech.py
 
 ## 8.OpencvBallTracking.py
@@ -208,9 +237,9 @@ our pi is brand new, which have nothing installed, so we need to install some pa
 ## 9.face_recognition.py
 
 ## 10.OpencvFaceTracking.py
-描述
-这是一个使用OpenCV进行人脸追踪从而控制小车运动的项目，可以实现在摄像头捕获的视频重实时追踪人脸并进行标记。
 
+描述
+这是一个使用 OpenCV 进行人脸追踪从而控制小车运动的项目，可以实现在摄像头捕获的视频重实时追踪人脸并进行标记。
 
 ## 11.robot_servo_ball.py
 
@@ -219,3 +248,7 @@ our pi is brand new, which have nothing installed, so we need to install some pa
 ## 13.Robot_QR_navigation.py
 
 ## 14.gesture.py
+
+## 15.Control_from_PC&Phone
+
+## 16.MQTT_control
