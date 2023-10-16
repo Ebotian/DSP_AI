@@ -1037,8 +1037,6 @@ cv2.destroyAllWindows()
 cap.release()
 ```
 
-=======
-
 ## 15.Control_from_PC&Phone
 
 Since I am not using any graphical interface to control the robot, following the tutorial video is not possible for me. I tried compile c program on pi but failed with some link error. I tried compile it successfully on my laptop but according to architecture difference, it's not possible run it on pi. So I decided to use the program in the directory `CLBROBOT` directly.
