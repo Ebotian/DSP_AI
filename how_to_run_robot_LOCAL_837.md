@@ -12,7 +12,7 @@ To connect to the raspberry pi, i used this command:
 ip a # to find the ip address of the laptop
 ```
 
-expect out put:
+example out put:
 
 ```bash
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -40,7 +40,7 @@ then use this to detect raspberry pi's ip:(notice the first three numbers are th
 sudo nmap -T4 -O 192.168.201.0/24
 ```
 
-expect output:
+example output:
 
 ```bash
 [sudo] password for ebotian:
@@ -178,48 +178,16 @@ then we can run the code now:
 ./1.[tab]
 ```
 
-expect output:robot start singing(playing music)
+expect output:robot start singing
 
 ## 2.button.py
 
-```bash
-./2.[tab]
-```
-
-expect output:when press button, light change its color
 
 ## 3.Basic movement.py
 
-notice if you don't run `dos2unix *.py` before, you will get this error:
-
-```bash
-/usr/bin/env: 'python2\r': No such file or directory
-```
-
-```bash
-./3.[tab]
-```
-
-expect output:robot start moving
-
 ## 4.infrared_avoid.py
 
-notice if you don't run `dos2unix *.py` before, you will get this error:
-
-```bash
-': [Errno 2] No such file or directory
-```
-
-```bash
-./4.[tab]
-```
-
-expect output:
-
-1. robot do nothing until button pressed
-2. robot start moving, when it detect obstacle, it will stop and turn around
-
-## 5.openCVLineFollowingRobot.py
+## 5.openCVLineFollowingRobot.py	
 
 ## 6.speech-compound.py
 
@@ -230,6 +198,9 @@ or the first connect, it will ask you whether connect it or not, just type `yes`
 then you can enter the shell of raspberry pi.
 our pi is brand new, which have nothing installed, so we need to install some packages:
 
+
+
+
 ## 7.Robot-speech.py
 
 ## 8.OpencvBallTracking.py
@@ -237,7 +208,6 @@ our pi is brand new, which have nothing installed, so we need to install some pa
 ## 9.face_recognition.py
 
 ## 10.OpencvFaceTracking.py
-<<<<<<< HEAD
 **描述**
 
 - OpenCVfacetracking.py是一个基于OpenCV实现的人脸追踪模块程序，它可以通过树莓派连接的摄像头实时检测视频流中的人脸，并对其进行追踪。该模块可以被集成到树莓派小车的代码中，以增强小车的感知能力和自主导航能力
@@ -369,11 +339,6 @@ clbrobot.t_stop(0) # 机器人停止
 cap.release()
 cv2.destroyAllWindows()       
 ```
-=======
-
-描述
-这是一个使用 OpenCV 进行人脸追踪从而控制小车运动的项目，可以实现在摄像头捕获的视频重实时追踪人脸并进行标记。
->>>>>>> 1db36bfe1d5d8922cc21b052dbd2160ee38566be
 
 ## 11.robot_servo_ball.py
 **描述**
@@ -663,7 +628,10 @@ cv2.destroyAllWindows()
 
 ## 13.Robot_QR_navigation.py
 **描述**
-二维码
+
+- 
+
+
 **环境**
 
 - 
@@ -853,7 +821,6 @@ if __name__ == '__main__':
 ```
 
 ## 14.gesture.py
-<<<<<<< HEAD
 **描述**
 
 - 
@@ -1040,9 +1007,3 @@ while(1):
 cv2.destroyAllWindows()
 cap.release()    
 ```
-=======
-
-## 15.Control_from_PC&Phone
-
-## 16.MQTT_control
->>>>>>> 1db36bfe1d5d8922cc21b052dbd2160ee38566be
