@@ -40,7 +40,7 @@ then use this to detect raspberry pi's ip:(notice the first three numbers are th
 sudo nmap -T4 -O 192.168.201.0/24
 ```
 
-expect output:
+expect output: 
 
 ```bash
 [sudo] password for ebotian:
@@ -237,7 +237,6 @@ our pi is brand new, which have nothing installed, so we need to install some pa
 ## 9.face_recognition.py
 
 ## 10.OpencvFaceTracking.py
-<<<<<<< HEAD
 **描述**
 
 - OpenCVfacetracking.py是一个基于OpenCV实现的人脸追踪模块程序，它可以通过树莓派连接的摄像头实时检测视频流中的人脸，并对其进行追踪。该模块可以被集成到树莓派小车的代码中，以增强小车的感知能力和自主导航能力
@@ -369,11 +368,6 @@ clbrobot.t_stop(0) # 机器人停止
 cap.release()
 cv2.destroyAllWindows()       
 ```
-=======
-
-描述
-这是一个使用 OpenCV 进行人脸追踪从而控制小车运动的项目，可以实现在摄像头捕获的视频重实时追踪人脸并进行标记。
->>>>>>> 1db36bfe1d5d8922cc21b052dbd2160ee38566be
 
 ## 11.robot_servo_ball.py
 **描述**
@@ -664,6 +658,7 @@ cv2.destroyAllWindows()
 ## 13.Robot_QR_navigation.py
 **描述**
 二维码
+
 **环境**
 
 - 
@@ -671,7 +666,7 @@ cv2.destroyAllWindows()
 
 **使用方法**
 - 确保已在树莓派安装好所需的环境
-- 下载robot_servo_ball.py，并将其复制到小车代码目录下
+- 下载Robot_QR_navigation.py，并将其复制到小车代码目录下
 - 调试参数并运行此代码
   
 
@@ -853,16 +848,11 @@ if __name__ == '__main__':
 ```
 
 ## 14.gesture.py
-<<<<<<< HEAD
 **描述**
-
 - 
-
 
 **环境**
-
 - 
-
 
 **使用方法**
 - 确保已在树莓派安装好所需的环境
@@ -1040,9 +1030,7 @@ while(1):
 cv2.destroyAllWindows()
 cap.release()    
 ```
-=======
 
 ## 15.Control_from_PC&Phone
 
 ## 16.MQTT_control
->>>>>>> 1db36bfe1d5d8922cc21b052dbd2160ee38566be
