@@ -850,7 +850,6 @@ if __name__ == '__main__':
 ```
 
 ## 14.gesture.py
-<<<<<<< HEAD
 **描述**
 
 - 
@@ -1037,9 +1036,7 @@ while(1):
 cv2.destroyAllWindows()
 cap.release()    
 ```
-=======
 
 ## 15.Control_from_PC&Phone
 
 ## 16.MQTT_control
->>>>>>> 1db36bfe1d5d8922cc21b052dbd2160ee38566be
