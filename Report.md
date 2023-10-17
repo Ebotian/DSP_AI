@@ -1055,10 +1055,13 @@ expect output:
 waiting for client...
 ```
 
-and camera also:
+And camera also(i write it into a file `camera.sh` in home):
 
 ```bash
+#!/bin/bash
 
+cd /home/pi/mjpg-streamer/mjpg-streamer-experimental
+./start.sh
 ```
 
 ## 16.MQTT_control

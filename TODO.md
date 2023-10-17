@@ -10,5 +10,19 @@ PART1:
 PART2:
 
 1. design road test
+
+- INPUT:
+  - camera
+  - infrared light
+  - PC&Phone signal
+  - Microphone
+  - button
+- OUTPUT:
+  - wheel
+  - sound
+  - light
+  - servo_angle
+  - remote signal
+
 2. test on road
 3. prepare PPT
