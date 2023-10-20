@@ -15,7 +15,7 @@ PART2:
   - camera
   - infrared light
   - PC&Phone signal
-  - Microphone
+  - Microphone(not yet)
   - button
 - OUTPUT:
   - wheel
