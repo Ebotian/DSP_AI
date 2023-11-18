@@ -1,0 +1,54 @@
+1c1
+< ####### Webcam Object Detection Using Tensorflow-trained Classifier #########
+---
+> ######## Webcam Object Detection Using Tensorflow-trained Classifier #########
+71c71
+<                    default='/home/pi/tflite/pi4b_tensorflow_lite/Sample_TFLite_model')
+---
+>                     required=True)
+161,162d160
+< start_time = time.time()  # get the current time
+< 
+167c165
+<     #t1 = cv2.getTickCount()
+---
+>     t1 = cv2.getTickCount()
+207,212c205,210
+<             #label = '%s: %d%%' % (object_name, int(scores[i]*100)) # Example: 'person: 72%'
+<             #labelSize, baseLine = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2) # Get font size
+<             #label_ymin = max(ymin, labelSize[1] + 10) # Make sure not to draw label too close to top of window
+<             #cv2.rectangle(frame, (xmin, label_ymin-labelSize[1]-10), (xmin+labelSize[0], label_ymin+baseLine-10), (255, 255, 255), cv2.FILLED) # Draw white box to put label text in
+<             #cv2.putText(frame, label, (xmin, label_ymin-7), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2) # Draw label text
+<             print(object_name)
+---
+>             label = '%s: %d%%' % (object_name, int(scores[i]*100)) # Example: 'person: 72%'
+>             labelSize, baseLine = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2) # Get font size
+>             label_ymin = max(ymin, labelSize[1] + 10) # Make sure not to draw label too close to top of window
+>             cv2.rectangle(frame, (xmin, label_ymin-labelSize[1]-10), (xmin+labelSize[0], label_ymin+baseLine-10), (255, 255, 255), cv2.FILLED) # Draw white box to put label text in
+>             cv2.putText(frame, label, (xmin, label_ymin-7), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2) # Draw label text
+> 
+214c212
+<     #cv2.putText(frame,'FPS: {0:.2f}'.format(frame_rate_calc),(30,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,0),2,cv2.LINE_AA)
+---
+>     cv2.putText(frame,'FPS: {0:.2f}'.format(frame_rate_calc),(30,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,0),2,cv2.LINE_AA)
+217c215
+<     #cv2.imshow('Object detector', frame)
+---
+>     cv2.imshow('Object detector', frame)
+220,222c218,220
+<     #t2 = cv2.getTickCount()
+<     #time1 = (t2-t1)/freq
+<     #frame_rate_calc= 1/time1
+---
+>     t2 = cv2.getTickCount()
+>     time1 = (t2-t1)/freq
+>     frame_rate_calc= 1/time1
+225,229c223,224
+<     #if cv2.waitKey(1) == ord('q'):
+<     #    break
+<     current_time = time.time()  # update the current time
+<     if current_time - start_time >= 10:  # if 10 seconds have passed
+<         break  # exit the loop
+---
+>     if cv2.waitKey(1) == ord('q'):
+>         break

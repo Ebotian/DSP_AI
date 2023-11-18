@@ -1,0 +1,53 @@
+13a14
+> import pygame
+17,20d17
+< # import required modules
+< from pydub import AudioSegment
+< from pydub.playback import play
+< 
+22,24c19,21
+< baidu_APP_ID='42490250'
+< baidu_API_KEY='8vzlVs3CGsZpLiKNqtteZSKZ'
+< baidu_SECRET_KEY='kXpZDgCKRZGlKtZlOO4ZCFLiGBVYORHh'
+---
+> baidu_APP_ID='40864783'
+> baidu_API_KEY='GN3WHDU0LONZP9Rf6a4GIGyn'
+> baidu_SECRET_KEY='68cDNzXgqUm6rp2AaqxHIFWBPV9laMzs'
+28,40c25,27
+< 
+< # Open the file
+< with open('/home/pi/read.txt', 'r') as file:
+<     # Read the first line
+<     line = file.readline()
+<     # Split the line into words
+<     words = line.split()
+<     # Get the first word
+<     if words:
+<         mytext = words[0]
+< 
+< result = baidu_aipSpeech.synthesis(text = "Watch out!"+mytext+" detected",
+<                              options={'spd':5,'vol':100,'per':0,})
+---
+> t1=time()
+> #result = baidu_aipSpeech.synthesis(text = '创乐博科技调用语音接口进行语音合成',options={'spd':5,'vol':9,'per':1,})
+> result = baidu_aipSpeech.synthesis(text = '创',options={'spd':5,'vol':9,'per':1,})
+43c30
+<     with open('/home/pi/myread.mp3','wb') as f:
+---
+>     with open('makerobo.mp3','wb') as f:
+48,54c35,40
+< #pygame.mixer.init()
+< #pygame.mixer.music.load('/home/pi/CLBROBOT/makerobo.mp3')
+< #pygame.mixer.music.play()
+< # for playing mp3 file
+< song = AudioSegment.from_mp3('/home/pi/myread.mp3')
+< print('playing sound using  pydub')
+< play(song)
+---
+> pygame.mixer.init()
+> pygame.mixer.music.load('/home/ebotian/Downloads/robo/CLBROBOT/makerobo.mp3')
+> pygame.mixer.music.play()
+> 
+> t2=time()
+> print(t2-t1)
+\ No newline at end of file

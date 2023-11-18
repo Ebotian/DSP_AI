@@ -1,0 +1,124 @@
+16,21c16
+< import time
+< import os
+< import sys
+< 
+< reload(sys)
+< sys.setdefaultencoding('utf8')
+---
+> import time  
+24,25c19,20
+< video_capture.set(3,90)
+< video_capture.set(4,90)
+---
+> video_capture.set(3,160) 
+> video_capture.set(4,120) 
+40,41c35,36
+< clbrobot.set_servo_angle(10,70)  # 底座舵机 90
+< clbrobot.set_servo_angle(9,130)  # 顶部舵机 145
+---
+> clbrobot.set_servo_angle(10,90)  # 底座舵机 90 
+> clbrobot.set_servo_angle(9,145)  # 顶部舵机 145
+47,59c42,54
+< #def keysacn():
+< #    val = GPIO.input(BtnPin)
+< #    while GPIO.input(BtnPin) == False:
+< #        val = GPIO.input(BtnPin)
+< #    while GPIO.input(BtnPin) == True:
+< #        time.sleep(0.01)
+< #        val = GPIO.input(BtnPin)
+< #        if val == True:
+< #            GPIO.output(Rpin,1)
+< #            while GPIO.input(BtnPin) == False:
+< #                GPIO.output(Rpin,0)
+< #        else:
+< #            GPIO.output(Rpin,0)
+---
+> def keysacn():
+>     val = GPIO.input(BtnPin)
+>     while GPIO.input(BtnPin) == False:
+>         val = GPIO.input(BtnPin)
+>     while GPIO.input(BtnPin) == True:
+>         time.sleep(0.01)
+>         val = GPIO.input(BtnPin)
+>         if val == True:
+>             GPIO.output(Rpin,1)
+>             while GPIO.input(BtnPin) == False:
+>                 GPIO.output(Rpin,0)
+>         else:
+>             GPIO.output(Rpin,0)
+61c56
+< GPIO.setwarnings(False)
+---
+> GPIO.setwarnings(False) 
+65c60
+< GPIO.setup(BtnPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)    # 设置输入BtnPin模式，拉高至高电平(3.3V)
+---
+> GPIO.setup(BtnPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)    # 设置输入BtnPin模式，拉高至高电平(3.3V) 
+67d61
+< V=0
+69,70c63
+< #keysacn()
+< start_time = time.time()  # get the current time
+---
+> keysacn()
+85c78
+< 
+---
+>     
+92c85
+< 
+---
+>         
+95c88
+< 
+---
+>         
+98c91
+< 
+---
+>         
+100c93
+< 
+---
+>         
+102,103c95,96
+<             clbrobot.turnRight(30,0)
+< 
+---
+>             clbrobot.turnRight(50,0)                 
+>             print "Turn Left!"
+105,106c98,99
+<             clbrobot.t_up(30,0)
+< 
+---
+>             clbrobot.t_up(50,0)
+>             print "On Track!"
+108,109c101,102
+<             clbrobot.turnLeft(30,0)
+< 
+---
+>             clbrobot.turnLeft(50,0)   
+>             print "Turn Right"
+111,116c104
+<          current_time = time.time()  # update the current time
+<          clbrobot.t_stop(0.5)
+<          if current_time - start_time >= 10:  # if 10 seconds have passed
+<              sys.exit()
+< 
+< 
+---
+>         print "I don't see the line"   
+118,123c106,110
+<     #cv2.imshow('frame',crop_img)
+<     #if cv2.waitKey(1) & 0xFF == ord('q'):
+<     #    clbrobot.t_stop(0)
+<     #    GPIO.cleanup()
+<     #    break
+< 
+---
+>     cv2.imshow('frame',crop_img)
+>     if cv2.waitKey(1) & 0xFF == ord('q'):
+>         clbrobot.t_stop(0)
+>         GPIO.cleanup()    
+>         break
